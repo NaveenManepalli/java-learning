@@ -1,4 +1,5 @@
-//lokeshwaran 202107099
+/*naveen.B
+202107116*/
 public class sum{
     public static void main(String args[]){
         prod();
