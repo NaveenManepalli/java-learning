@@ -6,6 +6,10 @@ public class AlphabetConverter {
         String input = "india";
         String converted = convertAlphabet(input);
         String swapped = swapNearbyVariables(converted);
+        String change = changeWord(swapped);
+        System.out.println(input);
+        System.out.println(converted);
+        System.out.println(swapped);
         System.out.println(change);
     }
 
@@ -32,5 +36,19 @@ public class AlphabetConverter {
             swap.setCharAt(i + 1, current);
         }
         return swap.toString();
+    }
+        
+    public static String changeWord(String swap) {
+        StringBuilder replace = new StringBuilder();
+        for (int i = 0; i < swap.length(); i++) {
+            char currentChar = swap.charAt(i);
+            if (Character.isLetter(currentChar)) {
+                char nextChar = (char) (currentChar + 1);
+                replace.append(nextChar);
+            } else {
+                replace.append(currentChar);
+            }
+        }
+        return replace.toString();
     }
 }
