@@ -1,3 +1,5 @@
+/*The given progrm is created to  encript the given name to create the code for the name  */
+
 /*Naveen.B 
 202107116*/
 
