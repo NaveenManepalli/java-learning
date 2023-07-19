@@ -1,5 +1,6 @@
 /*naveen.B
-202107116*/
+202107116
+slicing operator*/
 import java.io.*;
 import java.util.*;
 
